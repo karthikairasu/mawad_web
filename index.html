@@ -48,6 +48,44 @@
         <span><img class="" src="assets/images/userbg.png" style="width:auto;height: 28px"></span>
       </div> 
     </nav>
+    <!-----------side nav start--------->  
+    <div id="mySidenav" class="sidenav f-ply">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!--------profile open--------->
+      <div class="text-light">
+          <div class="pt-1">
+            <img class="rounded-circle my-3 ml-3" src="assets/images/profile.png" style="width:70px;height:70px">
+          </div>
+          <p class="mb-0 pl-4">Ramesh</p>
+          <!-- <h6 class="pt-1 pl-4 text-grey">8765534236</h6> -->
+      </div><!--------profile close--------->
+      <!-------- Account Menus open--------->
+      <ul class="nav nav-tabs flex-column text-dark side-mu f-mon">
+        <li class="nav-item">
+           <a class="nav-link py-3" href=""> My Orders</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link py-3" href=""> My Address</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link py-3" href=""> Knowledge</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link py-3" href=""> User Happiness</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link py-3" href=""> Contact Us</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link py-3" href=""> FAQ</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link py-3" href="#"> Logout</a>
+        </li>
+      </ul>
+      <!--------Account Menus close--------->
+      <footer class="text-white side-ft"> v1.1</footer>
+    </div>
   </header>
 </div>
 <main class="container">
@@ -233,8 +271,10 @@
 <footer>
   <nav class="navbar fixed-bottom navbar-light bg-white sd px-2">
     <div class="col-3 text-center">
-      <span class="d-block"><img src="assets/images/home.png" style="height: 30px;width: auto" alt="icon"></span>
-      <label class="text_gn d-block mb-0"><b>Home</b></label>
+      <a href="#">
+        <span class="d-block"><img src="assets/images/home.png" style="height: 30px;width: auto" alt="icon"></span>
+        <label class="text_gn d-block mb-0"><b>Home</b></label>
+      </a>
     </div>
     <div class="col-3 text-center">
       <span class="d-block"><img src="assets/images/search.png" style="height: 30px;width: auto" alt="icon"></span>
@@ -245,8 +285,10 @@
       <label class="text_gn d-block mb-0"><b>Materials</b></label>
     </div> 
     <div class="col-3 text-center px-0">
-      <span class="d-block"><img src="assets/images/menu.png" style="height: 30px;width: auto" alt="icon"></span>
-      <label class="text_gn d-block mb-0"><b>Menu</b></label>
+      <a href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="openNav()">
+        <span class="d-block"><img src="assets/images/menu.png" style="height: 30px;width: auto" alt="icon"></span>
+        <label class="text_gn d-block mb-0"><b>Menu</b></label>
+      </a>
     </div>
   </nav>
 </footer>
@@ -265,6 +307,12 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
     // Preloader
     $(window).on('load', function() {
       if ($('#preloader').length) {
