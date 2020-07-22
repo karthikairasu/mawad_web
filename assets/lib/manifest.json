@@ -1,32 +1,32 @@
 {
-  "name": "CarsRental",
-  "short_name": "CarsRental",
+  "name": "Mawad",
+  "short_name": "Mawad",
   "icons": [{
-    "src": "../images/icon.png",
+    "src": "../images/mawad_small.png",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "../images/icon.png",
+      "src": "../images/mawad_small.png",
       "sizes": "144x144",
       "type": "image/png"
     }, {
-      "src": "../images/icon.png",
+      "src": "../images/mawad_small.png",
       "sizes": "152x152",
       "type": "image/png"
     }, {
-      "src": "../images/icon.png",
+      "src": "../images/mawad_small.png",
       "sizes": "192x192",
       "type": "image/png"
     }, {
-      "src": "../images/icon.png",
+      "src": "../images/mawad_small.png",
       "sizes": "256x256",
       "type": "image/png"
     }, {
-      "src": "../images/icon.png",
+      "src": "../images/mawad_small.png",
       "sizes": "512x512",
       "type": "image/png"
     }],
-  "start_url": "C:/xampp/htdocs/chating_app/home.php",
+  "start_url": "C:/Github/mawad_web/index.html",
   "display": "standalone",
   "background_color": "#0B5E97",
   "theme_color": "#0B5E97"
