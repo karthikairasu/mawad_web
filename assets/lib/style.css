@@ -4,9 +4,13 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background: url(../images/pattern3.png);
+}
+a{
+  color: #444444;;
 }
 a:hover {
-  color: ;
+  color: #7c9c1e;;
   text-decoration: none;
 }
 .f-lib{
@@ -23,6 +27,9 @@ a:hover {
 }
 .sd{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.br_15{
+  border-radius: 15px;
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -83,6 +90,13 @@ a:hover {
 .carousel-inner img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+}
+@media (min-width: 0px) and (max-width: 767.98px) {
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
 }
 .category_title h5{
   display: flex;
@@ -91,7 +105,7 @@ a:hover {
   align-items: center;
   text-align: center;
 }
-.category_title h5:after {
+.category_title h5:before, .category_title h5:after{
   content: '';
   border-top: 4px solid;
   margin: 0 10px 0 10px;
@@ -181,6 +195,13 @@ a:hover {
   .suppliers_list h5{
     font-size: 12px;
   }
+  footer .fixed-bottom label{
+   font-size: 14px;
+  }
+  footer .fixed-bottom img{
+   height: 27px!important;
+   width: auto;
+  }
 }
 @media (min-width: 383px) and (max-width: 600px) {
   .suppliers_list{
@@ -189,6 +210,41 @@ a:hover {
   .suppliers_list h5{
     font-size: 16px;
   }
+}
+.effect2
+{
+  position: relative;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 6px 0 rgba(0, 0, 0, 0.19);
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
 }
 /*--------------------------------------------------------------
 # 
