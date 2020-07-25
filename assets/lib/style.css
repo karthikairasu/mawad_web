@@ -371,7 +371,7 @@ a:hover {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  padding: .64rem 2.14rem;
+  padding: .4rem 2.14rem;
   font-size: .81rem;
 }
 .waves-effect:hover {
@@ -442,6 +442,18 @@ a:hover {
     border-radius: 0px!important;
 }
 .lang_btn .nav-tabs .nav-link {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #7c9c1e;
+    font-weight: bold;
+}
+.tabs .nav-tabs .nav-item.show .nav-link, .tabs .nav-tabs .nav-link.active {
+    color: #ffffff!important;
+    background-color: #7c9c1e!important;
+    border-color: #7c9c1e #7c9c1e #7c9c1e #7c9c1e!important;
+    border-radius: 0px!important;
+}
+.tabs .nav-tabs .nav-link {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     color: #7c9c1e;
