@@ -52,7 +52,7 @@
 <main class="container">
 
   <!-- =======  Section ======= -->
-  <section id="tabs" class="tabs bg-white br_15 px-2 pt-2 pb-5 my-3">
+  <section id="tabs" class="tabs bg-white br_15 px-2 pt-2 my-3">
     <div class="row mx-0">
      <ul class="nav nav-tabs mx-auto text-center border-0" style="width: 100%;border: 2px solid #7c9c1e!important;border-radius: 8px;">
         <li class="nav-item" style="width: 50%">
@@ -64,37 +64,102 @@
       </ul>
       <div class="tab-content w-100" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div class="text-center py-2">
-            <figure class="">
-               <img src="assets/images/profile.png" alt="logo" style="height: 70px;width: auto">
-            </figure>
-          </div>
-          <div class="form-group mb-0">
-            <label class="mb-0" style="color: #748a9d;font-weight: bold;">Full Name</label>
-            <input type="text" class="form-control" placeholder="fname" value="Ramesh">
-          </div>
-          <div class="form-group mb-0">
-            <label class="mb-0" style="color: #748a9d;font-weight: bold;">Password</label>
-            <input type="password" class="form-control" placeholder="pass" value="123456">
-          </div>
-          <div class="form-group mb-0">
-            <label class="mb-0" style="color: #748a9d;font-weight: bold;">Mobile Number</label>
-            <input type="number" class="form-control" placeholder="mobile" value="123456789">
-          </div>
-          <div class="form-group mb-0">
-            <label class="mb-0" style="color: #748a9d;font-weight: bold;">Location 1</label>
-            <input type="text" class="form-control" placeholder="loc1" value="bangalore">
-          </div>
-          <div class="form-group mb-0">
-            <label class="mb-0" style="color: #748a9d;font-weight: bold;">Location 2</label>
-            <input type="text" class="form-control" placeholder="loc2" value="Add">
-          </div>
-          <div class="form-group mb-0">
-            <label class="mb-0" style="color: #748a9d;font-weight: bold;">Location 3</label>
-            <input type="text" class="form-control" placeholder="loc3" value="Add">
+          <div class="row mx-0">
+            <div class="col-12">
+              <div class="text-center py-2">
+                <figure class="">
+                   <img src="assets/images/profile.png" alt="logo" style="height: 70px;width: auto">
+                </figure>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <div class="form-group mb-0">
+                <label class="mb-0" style="color: #748a9d;font-weight: bold;">Full Name</label>
+                <input type="text" class="form-control" placeholder="fname" value="Ramesh">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <div class="form-group mb-0">
+                <label class="mb-0" style="color: #748a9d;font-weight: bold;">Password</label>
+                <input type="password" class="form-control" placeholder="pass" value="123456">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <div class="form-group mb-0">
+                <label class="mb-0" style="color: #748a9d;font-weight: bold;">Mobile Number</label>
+                <input type="number" class="form-control" placeholder="mobile" value="123456789">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <div class="form-group mb-0">
+                <label class="mb-0" style="color: #748a9d;font-weight: bold;">Location 1</label>
+                <input type="text" class="form-control" placeholder="loc1" value="bangalore">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <div class="form-group mb-0">
+                <label class="mb-0" style="color: #748a9d;font-weight: bold;">Location 2</label>
+                <input type="text" class="form-control" placeholder="loc2" value="Add">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-2">
+              <div class="form-group mb-0">
+                <label class="mb-0" style="color: #748a9d;font-weight: bold;">Location 3</label>
+                <input type="text" class="form-control" placeholder="loc3" value="Add">
+              </div>
+            </div>
+            <div class="col-12 col-md-12 my-2">
+              <div class="form-group text-center">
+                <button class="btn btn_custom btn-rounded" type="submit">Save</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+           <div class="row f-mon mx-0">
+            <div class="col-12 my-2">
+              <div class="text-center py-2">
+                <h4 style="color: #748a9d;font-weight: bold;">Credit Card Information</h4>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="fname" value="Credit card number">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="Name on card" value="">
+              </div>
+            </div>
+            <div class="col-6 col-md-6 mb-3">
+              <div class="form-group mb-0">
+                <input class="form-control"  placeholder="MM/YYYY"
+                    onfocus="(this.type='month')" value="">
+              </div>
+            </div>
+            <div class="col-6 col-md-6 mb-3">
+              <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="CCV" value="CCV">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="Street address" value="">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="Zip code" value="">
+              </div>
+            </div>
+            <div class="col-12 col-md-12 my-2">
+              <div class="form-group text-center">
+                <button class="btn btn_custom btn-rounded" type="submit">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
