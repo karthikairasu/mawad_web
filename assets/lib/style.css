@@ -31,6 +31,12 @@ a:hover {
 .br_15{
   border-radius: 15px;
 }
+.f-14{
+  font-size: 14px!important;
+}
+.f-10{
+  font-size: 10px!important;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -447,6 +453,9 @@ a:hover {
     color: #7c9c1e;
     font-weight: bold;
 }
+/*--------------------------------------------------------------
+# my account
+--------------------------------------------------------------*/
 .tabs .nav-tabs .nav-item.show .nav-link, .tabs .nav-tabs .nav-link.active {
     color: #ffffff!important;
     background-color: #7c9c1e!important;
@@ -458,4 +467,124 @@ a:hover {
     border-top-right-radius: .25rem;
     color: #7c9c1e;
     font-weight: bold;
+}
+.orders_tabs .nav-tabs .nav-item.show .nav-link, .orders_tabs .nav-tabs .nav-link.active {
+    color: #ffffff!important;
+    background-color: #7c9c1e!important;
+    border-color: #7c9c1e #7c9c1e #7c9c1e #7c9c1e!important;
+    border-radius: 0px!important;
+}
+.orders_tabs .nav-tabs .nav-link {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #7c9c1e;
+    font-weight: bold;
+}
+.orders_tabs #home .orders_card{
+  border: 1px solid #f0f4f8;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 4px 0 rgba(0, 0, 0, 0.19);
+  background: #f0f4f8; 
+  font-size: 14px;
+}
+.orders_tabs #profile .orders_card{
+  border: 1px solid #f0f4f8;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 4px 0 rgba(0, 0, 0, 0.19);
+  background: #f0f4f8; 
+  font-size: 14px;
+}
+.custom_card{
+  border: 1px solid #f0f4f8;
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 4px 0 rgba(0, 0, 0, 0.19);
+  background: #f0f4f8; 
+  font-size: 14px;
+}
+.hover:hover{
+  border: 2px dashed rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.2), 0px 0px 6px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.btn_border_gn{
+  background: #fff;
+  border: 2px solid #7c9c1e;
+  color: #7c9c1e;
+}
+.btn_border_gn:active, .btn_border_gn:hover{
+  background: #7c9c1e;
+  border: 2px solid #7c9c1e;
+  color: #fff;
+}
+  .progressbar-wrapper {
+      width: auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0px -22px 0 -60px;
+}
+
+.progressbar li {
+      list-style-type: none;
+      width: 25%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: capitalize;
+      color: #748a9d;
+      font-weight: bold;
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: "";
+    line-height: 30px;
+    border: 2px solid #748a9d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 3px auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+.progressbar li:after {
+     width: 100%;
+     height: 2px;
+     content: '';
+     position: absolute;
+     background-color: #748a9d;
+     top: 15px;
+     left: -50%;
+     z-index: 0;
+}
+.progressbar li:first-child:after {
+     content: none;
+}
+.progressbar li.active {
+    color: #fff;
+    font-weight: bold;  
+}
+.progressbar li.active span{
+    color: #7c9c1e;
+    font-weight: bold;  
+}
+.progressbar li.active:before {
+    border-color: #7c9c1e;
+    background: #7c9c1e;
+ }
+.progressbar li.active + li:after {
+    background-color: #7c9c1e;
+}
+.progressbar li.active:before {
+    background: #7c9c1e url(user.svg) no-repeat center center;
+    background-size: 60%;
+}
+.progressbar li::before {
+    background: #fff url(user.svg) no-repeat center center;
+    background-size: 60%;
+}
+.progressbar {
+    counter-reset: step;
+}
+.progressbar li:before {
+    content: counter(step);
+    counter-increment: step; 
 }
