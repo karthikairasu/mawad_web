@@ -31,6 +31,9 @@ a:hover {
 .br_15{
   border-radius: 15px;
 }
+.f-18{
+  font-size: 18px!important;
+}
 .f-16{
   font-size: 16px!important;
 }
@@ -42,6 +45,12 @@ a:hover {
 }
 .bb_solid{
   border-bottom: 2px dashed #a6bcd0;
+}
+.br_w{
+  border: 1px solid #ffffff!important;
+}
+.br_wb{
+  border-bottom: 1px solid #ffffff!important;
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -704,7 +713,7 @@ a:hover {
     width: 19px;
     text-align: center;
   }
-@media screen and (max-width: 382px) {
+@media screen and (max-width: 419.98px) {
   .category_div img{
     height: 70px!important;
     width:85px!important;
@@ -730,7 +739,7 @@ a:hover {
   float: none;
 }
 }
-@media (min-width: 383px) and (max-width: 600px) {
+@media (min-width: 420px) and (max-width: 600px) {
   .category_div{
     font-size: 15px;
   }
@@ -807,6 +816,49 @@ a:hover {
 }
 @media (min-width: 768px) {
  .compare_main{
+    border-style: none solid none solid;
+    border-color: skyblue;
+ }
+}
+/*--------------------------------------------------------------
+# contactus
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+ .contactus_main{
+    border-style: none solid none solid;
+    border-color: skyblue;
+ }
+}
+/*--------------------------------------------------------------
+# help
+--------------------------------------------------------------*/
+.hover2:hover{
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn_enter{
+  background: #7c9c1e;
+  padding: 8px 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 20px;
+}
+.msg_time{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 10px;
+  color: #a2b1bd;
+}
+.msg_timer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 10px;
+  color: #a2b1bd;
+}
+@media (min-width: 768px) {
+ .help_main, .chat_main{
     border-style: none solid none solid;
     border-color: skyblue;
  }
