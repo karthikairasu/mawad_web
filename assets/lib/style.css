@@ -622,7 +622,7 @@ a:hover {
   font-size: 14px;
   border-radius: 6px; 
   padding: 5px 6px;
-  float: right;
+  /*float: right;*/
   margin: 2px 2px;
   font-weight: 100;
 }
@@ -697,7 +697,7 @@ a:hover {
   }
   /* / skin 1 */
   .add_note{
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     color: #FF9800;
   }
@@ -717,6 +717,10 @@ a:hover {
   .category_div img{
     height: 70px!important;
     width:85px!important;
+  }
+  .category_div .cat_img{
+    height: 120px!important;
+    width:auto!important;
   }
   .category_div{
     font-size: 12px;
