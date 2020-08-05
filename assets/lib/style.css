@@ -460,7 +460,7 @@ a:hover {
     color: #ffffff!important;
     background-color: #28324b!important;
     border-color: #28324b #28324b #28324b #28324b!important;
-    border-radius: 0px!important;
+    border-radius: 4px!important;
 }
 .lang_btn .nav-tabs .nav-link {
     border-top-left-radius: .25rem;
