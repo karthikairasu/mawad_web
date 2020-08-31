@@ -166,14 +166,130 @@ a:hover {
   box-shadow: 0 0px 4px 1px rgba(0, 0, 0, 0.2), 0 0px 4px 1px rgba(0, 0, 0, 0.19);
   border:none;
 }
+@media (min-width: 768px){
+.d-md-block {
+    display: contents!important;
+}
+.input-group{
+    display: flex!important;
+}
+}
+.btn_sh{
+  padding: 0px;
+  margin: 0px;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+   -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.btn_sh:hover{
+  background: transparent;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+#search{
+  float: none;
+  font-size: 16px;
+  padding: 0px;
+  /*-webkit-transform: rotate(181deg);
+  -moz-transform: rotate(181deg);
+  -ms-transform: rotate(181deg);
+  -o-transform: rotate(181deg); 
+  transform: rotate(181deg);*/
+}
+.search_box {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  max-width: 100%;
+  clear: both;
+  width: 100%;
+  background: #ccc;
+  padding: 0 1%;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition:  all 0.1s ease-in-out;
+  -ms-transition:  all 0.1s ease-in-out;
+  -o-transition:  all0.1s ease-in-out;
+  transition:  all 0.1s ease-in-out;
+}
+.search_box.active{
+  height: auto;
+  padding: 1%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition:  all 0.1s ease-in-out;
+  -ms-transition:  all 0.1s ease-in-out;
+  -o-transition:  all 0.1s ease-in-out;
+  transition:  all 0.1s ease-in-out;
+  background: rgba(249, 235, 170, 1);
+  box-shadow: 0 0 85px -10px rgba(0, 0, 0, 0.2);
+}
+.search_box input {
+  width: 90%;
+  font-size: 1em;
+  margin: 0px;
+  padding:1%;
+  border: none;
+  background: #fff;
+}
+.search_box input.search_icon {
+  clear: both;
+  width:10%;
+  height: auto;
+  padding: 1%;
+  margin: 0;
+  float: right;
+  border: medium none;
+  color: #FFF;
+  cursor: pointer;
+  background: #42BBA3;
+  opacity: 1;
+    -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.search_box input.search_icon:hover {
+  background: #777;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.search_md{
+  border: 1px solid #b9d4ef;
+}
+.search_md .input-group-prepend .btn{
+  border: 1px solid transparent;
+  background: #f0f4f8!important;
+  box-shadow: none!important;
+  color: rgba(35, 56, 81, 1);
+  font-size: 12px;
+  border-right: 1px solid #b9d4ef;
+}
 /*--------------------------------------------------------------
 # home
 --------------------------------------------------------------*/
 /* Make the image fully responsive */
+#carouselmawad{
+  background: #e8e8e8;
+}
 .carousel-inner img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 @media (min-width: 0px) and (max-width: 767.98px) {
 .carousel-inner img {
@@ -341,6 +457,47 @@ a:hover {
   transform: rotate(3deg);
   right: 10px;
   left: auto;
+}
+.main_category .heading b{
+  border-bottom: 2px solid #fede3f;
+  font-family: 'Montserrat';
+  color: rgba(35, 56, 81, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.main_category .product_main{
+  background: #dedede;
+  font-family: 'Montserrat';
+}
+.main_category .product_main figcaption label{
+  font-weight: bold;
+  color: rgba(35, 56, 81, 1);
+}
+
+.bestseller_category .heading b{
+  border-bottom: 2px solid #fede3f;
+  font-family: 'Montserrat';
+  color: rgba(35, 56, 81, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.bestseller_category .product_main{
+  background: #dedede;
+  font-family: 'Montserrat';
+}
+.bestseller_category .product_main figcaption label{
+  font-weight: bold;
+  color: rgba(35, 56, 81, 1);
+}
+.brand_logo_slider .heading b{
+  border-bottom: 2px solid #fede3f;
+  font-family: 'Montserrat';
+  color: rgba(35, 56, 81, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 /*--------------------------------------------------------------
 # login
@@ -866,4 +1023,128 @@ a:hover {
     border-style: none solid none solid;
     border-color: skyblue;
  }
+}
+/*======Brand logo Slider=======*/
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+.slick-slide img:hover{
+  opacity: 1;
+  transform: scale(1.15);
+  filter: grayscale(0);
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
