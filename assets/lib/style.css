@@ -43,6 +43,9 @@ a:hover {
 .f-10{
   font-size: 10px!important;
 }
+.fw-600{
+  font-weight: 600!important;
+}
 .bb_solid{
   border-bottom: 2px dashed #a6bcd0;
 }
@@ -913,6 +916,20 @@ a:hover {
     border-style: none solid none solid;
     border-color: skyblue;
  }
+}
+/*.main_category .row{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.main_category .row .col-lg-2{
+  flex: 0 0 auto;
+}*/
+.owl-slider .owl-carousel .item .product_main:hover {
+    border: 2px dashed rgba(0,0,0,0.35);
+}
+.text-logoblue{
+  color: rgba(35, 56, 81, 1);
 }
 /*--------------------------------------------------------------
 # cart
