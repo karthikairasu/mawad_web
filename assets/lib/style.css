@@ -1192,3 +1192,30 @@ a:hover {
 .slick-arrow.slick-hidden {
     display: none;
 }
+/*==========footer==================*/
+.footer .heading b{
+  border-bottom: 2px solid #fede3f;
+  font-family: 'Montserrat';
+  color: rgba(35, 56, 81, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.footer .about_us .list-group{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .about_us .list-group .list-group-item{
+    justify-content: flex-start;
+    width: auto;
+    padding-bottom: 5px;
+    background: #fff9bd;
+    border: none;
+    padding: .25rem .25rem;
+}
+.footer .about_us .list-group .list-group-item::before {
+    content: '\f35a' !important;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+}
