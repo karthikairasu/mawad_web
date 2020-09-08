@@ -40,6 +40,9 @@ a:hover {
 .f-14{
   font-size: 14px!important;
 }
+.f-12{
+  font-size: 12px!important;
+}
 .f-10{
   font-size: 10px!important;
 }
@@ -1264,4 +1267,261 @@ a:hover {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+/*=================supplier side filter==================*/
+.side_filter {
+  height: 400px
+}
+.side_filter ol, .side_filter ul {
+  list-style: none;
+}
+.side_filter .heading b{
+  border-bottom: 2px solid #fede3f;
+  font-family: 'Montserrat';
+  color: rgba(35, 56, 81, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.cd-accordion-menu {
+  width: 90%;
+  max-width: 600px;
+  background: #f2f2f2;
+  margin: .25em auto;
+  padding: 0px;
+}
+.cd-accordion-menu ul {
+  /* by default hide all sub menus */
+  display: none;
+}
+.cd-accordion-menu li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cd-accordion-menu input[type=checkbox] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+.cd-accordion-menu label, .cd-accordion-menu a {
+  position: relative;
+  display: block;
+  padding: 18px 10px 18px 35px;
+  background: #ffffff;
+  /*box-shadow: inset 0 -1px #555960;*/
+  color: #6b6b6b;
+  font-size: 1rem;
+}
+.no-touch .cd-accordion-menu label:hover, .no-touch .cd-accordion-menu a:hover {
+  background: #52565d;
+}
+.cd-accordion-menu label::before, .cd-accordion-menu label::after, .cd-accordion-menu a::after {
+  /* icons */
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.cd-accordion-menu label {
+  cursor: pointer;
+}
+.cd-accordion-menu label::before{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/532833/ic_keyboard_arrow_down_black_36px.svg);
+  background-repeat: no-repeat;
+  height: 25px;
+}
+.cd-accordion-menu label::before {
+  /* arrow icon */
+  left: 0px;
+  background-position: 0 0;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-60%) rotate(0deg);
+}
+
+.cd-accordion-menu input[type=checkbox]:checked + label::before {
+  /* rotate arrow */
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cd-accordion-menu input[type=checkbox]:checked + label + ul,
+.cd-accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+ 
+  display: block;
+}
+.cd-accordion-menu ul label,
+.cd-accordion-menu ul a {
+  background: #35383d;
+  box-shadow: inset 0 -1px #41444a;
+  padding-left: 82px;
+}
+.no-touch .cd-accordion-menu ul label:hover, .no-touch
+.cd-accordion-menu ul a:hover {
+  background: #3c3f45;
+}
+.cd-accordion-menu > li:last-of-type > label,
+.cd-accordion-menu > li:last-of-type > a,
+.cd-accordion-menu > li > ul > li:last-of-type label,
+.cd-accordion-menu > li > ul > li:last-of-type a {
+  box-shadow: none;
+  background: #f2f2f2;
+}
+.cd-accordion-menu ul label::before {
+  left: 36px;
+}
+
+  .cd-accordion-menu label::before {
+    left: 0px;
+  }
+
+  .cd-accordion-menu ul label,
+  .cd-accordion-menu ul a {
+    padding: 5px 10px;
+  }
+  .cd-accordion-menu ul label::before {
+    left: 48px;
+  }
+
+.cd-accordion-menu.animated label::before {
+
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.cd-accordion-menu .group{
+  background: aliceblue!important;
+}
+.cd-accordion-menu > li > ul > li:last-of-type a:hover {
+  color: #2196f3;
+}
+.card_main_col {
+  background: #dedede;
+  border: none;
+  border-radius: 0px;
+}
+.card_main_col:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,.15);
+}
+.card_main_col .image {
+    position: relative;
+    display: block;
+    padding-top: 80%;
+    margin-bottom: 20px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    margin: 10px;
+    background: rgba(255, 255, 255);
+}
+.card_main_col .image:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, .10);*/
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+.card_main_col:hover .image img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.card_main_col .image img {
+    -webkit-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+}
+.card_main_col .image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.main_filter .card_main_col{
+  background: #dedede;
+  font-family: 'Montserrat';
+}
+.main_filter .card_main_col figcaption label{
+  font-weight: bold;
+  color: rgba(35, 56, 81, 1);
+}
+.card_main_col2 {
+  background: #dedede;
+  border: none;
+  border-radius: 0px;
+}
+.card_main_col2:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,.15);
+}
+.card_main_col2 .image {
+    position: relative;
+    display: block;
+    padding-top: 50%;
+    margin-bottom: 20px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    margin: 3px;
+    background: rgba(255, 255, 255);
+}
+.card_main_col2 .image:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, .10);*/
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+.card_main_col2:hover .image img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.card_main_col2 .image img {
+    -webkit-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+}
+.card_main_col2 .image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
