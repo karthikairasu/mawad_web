@@ -1525,3 +1525,99 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*============add to cart==========*/
+.side_add_cart .card_main_col {
+  background: #dedede;
+  border: none;
+  border-radius: 0px;
+}
+.side_add_cart .card_main_col .image {
+    position: relative;
+    display: block;
+    padding-top: 90%;
+    margin-bottom: 20px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    margin: 3px;
+    background: rgba(255, 255, 255);
+}
+.side_add_cart .card_main_col .image:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, .10);*/
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+.side_add_cart .card_main_col:hover .image img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.side_add_cart .card_main_col .image img {
+    -webkit-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+}
+.side_add_cart .card_main_col .image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-- Ratings --*/
+.rating1 {
+    direction:ltr;
+}
+.starRating:not(old) {
+    display: inline-block;
+    height: 18px;
+    width:100px;
+    overflow: hidden;
+}
+
+.starRating:not(old) > input{
+  margin-right :-26%;
+  opacity      : 0;
+}
+
+.starRating:not(old) > label {
+    float: right;
+    background: url(../images/1.png);
+    background-size: contain;
+    margin-right: 2px;
+}
+
+.starRating:not(old) > label:before{
+  content         : '';
+  display         : block;
+  width           : 18px;
+  height          : 18px;
+  background      : url(../images/2.png);
+  background-size : contain;
+  opacity         : 0;
+  transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before{
+  opacity : 1;
+}
+/*-- //Ratings --*/
+
