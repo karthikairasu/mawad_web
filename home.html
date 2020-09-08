@@ -270,11 +270,12 @@
   </section><!-- End Carousel Section -->
 
   <section class="main_category">
-    <div class="container-fluid px-4 p-1">
+    <div class="container-fluid px-4 my-3 p-1">
+      <div class="row mx-0 sd4">
         <div class="col-12 col-md-12 heading bg-white px-2 py-2">
            <h5 class=""><b>MAIN CATEGORIES</b></h5>
         </div>
-        <div class="px-2 bg-white py-2">
+        <div class="col-12 px-2 bg-white py-2">
           <div class="owl-slider">
             <div id="carousel" class="owl-carousel">
               <a href="suppliers_list.html">
@@ -386,6 +387,7 @@
             </div>
           </div>
         </div>
+        </div>
       <!-- <div class="row bg-white mx-0 p-2">
         
 
@@ -485,11 +487,12 @@
   </section><!---======section close=====--->
 
   <section class="bestseller_category">
-    <div class="container-fluid px-4 p-1">
+    <div class="container-fluid px-4 my-3 p-1">
+      <div class="row mx-0 sd4">
         <div class="col-12 col-md-12 heading bg-white px-2 py-2">
            <h5 class=""><b>BESTSELLERS</b></h5>
         </div>
-        <div class="px-2 bg-white py-2">
+        <div class=" col-12 px-2 bg-white py-2">
           <div class="owl-slider">
             <div id="carousel" class="owl-carousel">
 
@@ -599,21 +602,18 @@
 
         </div>
         <!-- ==========close=========== -->
-      </div>
-      <!-- ==========close=========== -->
     </div>
   </section><!---======section close=====--->
 
   <section class="brand_logo_slider mb-4">
     <div class="container-fluid px-4 p-1">
-      <div class="row bg-white mx-0 p-2">
-        <div class="col-12 col-md-12 heading px-0">
-           <h5 class=""><b>Our Suppliers</b></h5>
-        </div>
+      <div class="row bg-white mx-0 p-2 sd4">
+        <div class="col-12 col-md-12 heading px-0 py-3 text-center">
+           <h6 class=""><b>Our Suppliers</b></h6>
         </div>
         <!-- ==========close=========== -->
 
-        <section class="customer-logos slider bg-white pb-3">
+        <section class="col-12 customer-logos slider bg-white pb-3">
           <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
           <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
           <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
@@ -680,7 +680,8 @@
      </div>
   </section>
 
-
+<!-- Return to Top -->
+<a href="javascript:" class="sd4" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
  
 </main>
 <div id="preloader"></div>
@@ -784,12 +785,12 @@
 });
   </script>
   <script type="text/javascript">
+
     $( "#search" ).click(function(e) {
-    e.preventDefault();
-    $(".search_box").toggleClass('active');
-  });
-  </script>
-  <script type="text/javascript">
+      e.preventDefault();
+      $(".search_box").toggleClass('active');
+    });
+
     // Prevent closing from click inside dropdown
     $(document).on('click', '.dropdown-menu', function (e) {
       e.stopPropagation();
@@ -807,6 +808,20 @@
       })
       });
     }
+
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
   </script>
 </body>
 </html>

@@ -169,6 +169,10 @@ a:hover {
   box-shadow: 0 0px 4px 1px rgba(0, 0, 0, 0.2), 0 0px 4px 1px rgba(0, 0, 0, 0.19);
   border:none;
 }
+.sd4 {
+  box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2), 0 0px 1px 0px rgba(0, 0, 0, 0.19);
+  border:none;
+}
 @media (min-width: 768px){
 .d-md-block {
     display: contents!important;
@@ -1218,4 +1222,46 @@ a:hover {
     content: '\f35a' !important;
     font-family: "Font Awesome 5 Free";
     margin-right: 5px;
+}
+/*=================return to top==================*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(23, 162, 184);
+    background: rgba(23, 162, 184, .7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 9999!important;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(23, 162, 184, 1);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
