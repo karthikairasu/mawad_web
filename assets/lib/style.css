@@ -58,6 +58,13 @@ a:hover {
 .br_wb{
   border-bottom: 1px solid #ffffff!important;
 }
+.border_b_yellow{
+  border-bottom: 2px solid #fede3f;
+}
+.btn_yellow{
+  color: #ffffff;
+  background-color: #ecca20;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
